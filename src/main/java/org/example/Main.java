@@ -41,6 +41,7 @@ public class Main {
         }
 
         ArrayListSize.showArrayListSize(numbers);
+
         ArrayListNumbers.showArrayListNumbers(numbers);
     }
 }
