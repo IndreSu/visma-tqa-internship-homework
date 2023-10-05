@@ -1,7 +1,8 @@
 package org.example;
-import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -22,25 +23,24 @@ public class Main {
             }
         }
 
-        int sum = 0;
-        for (int i = 0; i < numbers.size(); i++) {
-            sum = sum + numbers.get(i);
+        int sum = ArrayListSum.calculateArrayListNumbers(numbers);
+
+        LocalDate today = LocalDate.now();
+
+        int sumDividedDayToday = sum / today.getDayOfWeek().getValue();
+        System.out.println("Sum of all numbers divided by a number of today's day is: " + sumDividedDayToday);
+
+        System.out.println("Choose menu item:");
+        System.out.println("1. The size of the array");
+        System.out.println("2. The numbers of the array");
+
+        int menuItem = Integer.parseInt(scanner.nextLine());
+        if (menuItem == 1) {
+            System.out.println("The size of the array is:" + ArrayListSize.showArrayListSize(numbers));
+        } else if (menuItem == 2) {
+            System.out.println("The numbers of the array are: ");
+            ArrayListNumbers.showArrayListNumbers(numbers);
         }
-
-        while (true) {
-            System.out.println("Please enter a number corresponding to today's day: if Monday, enter 1, Tuesday - 2, Wednesday - 3, Thursday - 4, Friday - 5, Saturday - 6, Sunday - 7");
-            int dayToday = Integer.parseInt(scanner.nextLine());
-
-            if (dayToday >= 1 && dayToday <= 7) {
-                int sumDividedDayToday = sum / dayToday;
-                System.out.println("Sum of all numbers divided by a number of today's day is: " + sumDividedDayToday);
-                break;
-            } else {
-                System.out.println("Enter a valid number from 1 to 7");
-            }
-        }
-
-        ArrayListSize.showArrayListSize(numbers);
-        ArrayListNumbers.showArrayListNumbers(numbers);
+        scanner.close();
     }
 }

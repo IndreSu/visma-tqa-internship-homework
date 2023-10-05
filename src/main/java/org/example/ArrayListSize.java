@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 public class ArrayListSize {
 
-    public static void showArrayListSize(ArrayList<Integer> listSize) {
+    public static int showArrayListSize(ArrayList<Integer> listSize) {
         int size = listSize.size();
-        System.out.println("The size array is: " + size);
+
+        return size;
     }
 }

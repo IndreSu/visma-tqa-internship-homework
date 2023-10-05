@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class ArrayListNumbers {
 
     public static void showArrayListNumbers(ArrayList<Integer> listNumbers) {
-        System.out.println("The numbers in the array are: " + listNumbers);
-
+        for (int i = 0; i < listNumbers.size(); i++) {
+            System.out.print(listNumbers.get(i) + ", ");
+        }
     }
 }
