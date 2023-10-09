@@ -9,7 +9,7 @@ Installation and setup:
 1.	Before proceeding, download and install IntelliJ IDEA on your computer by following the instructions provided at https://www.jetbrains.com/idea/ .
 
 2.	Download the console application source code files from the GitHub:
-•	Click on the link https://github.com/IndreSu/tqa-internship-homework-visma .
+•	Click on the link https://github.com/IndreSu/visma-tqa-internship-homework .
 •	On the GitHub repository page, click the green “Code” button to open the download menu.
 •	Select “Download ZIP” from the menu and save the source code ZIP file to your computer (choose a location to save the file).
 •	After the ZIP file is downloaded, navigate to the location where it was saved.
