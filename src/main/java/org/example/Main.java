@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        //komentaras
+
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         LocalDate today = LocalDate.now();
