@@ -24,10 +24,11 @@ public class Main {
             }
         }
 
+
         int sum = ArrayListSum.calculateArrayListNumbers(numbers);
 
         int sumDividedDayToday = sum / today.getDayOfWeek().getValue();
-        System.out.println("Sum of all numbers divided by a number of today's day is: " + sumDividedDayToday);
+        System.out.println("Sum of all numbers divided by today's day is: " + sumDividedDayToday);
 
         System.out.println("Choose menu item:");
         System.out.println("1. The size of the array");
